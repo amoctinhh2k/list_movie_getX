@@ -16,18 +16,18 @@ class _BackgroundVideoState extends State<BackgroundVideo> {
   @override
   void initState() {
     super.initState();
-    _controller =VideoPlayerController.asset("");
-    Future.delayed(const Duration(seconds:1), () {
-      _controller =
-      // VideoPlayerController.network(
-      //     "https://amt2020.000webhostapp.com/mp4/ironman.mp4")
-      VideoPlayerController.asset("assets/intro/ironman.mp4")
-        ..initialize().then((_) {
-          _controller.play();
-          _controller.setLooping(true);
-          setState(() {});
-        });
-    });
+    _controller = VideoPlayerController.asset("");
+    // Future.delayed(const Duration(seconds: 1), () {
+    //   _controller =
+    //       // VideoPlayerController.network(
+    //       //     "https://amt2020.000webhostapp.com/mp4/ironman.mp4")
+    //       VideoPlayerController.asset("assets/intro/ironman.mp4")
+    //         ..initialize().then((_) {
+    //           _controller.play();
+    //           _controller.setLooping(true);
+    //           setState(() {});
+    //         });
+    // });
   }
 
   @override
@@ -42,16 +42,16 @@ class _BackgroundVideoState extends State<BackgroundVideo> {
       child: Scaffold(
         body: Stack(
           children: <Widget>[
-            SizedBox.expand(
-              child: FittedBox(
-                fit: BoxFit.fill,
-                child: SizedBox(
-                  width: _controller.value.size.width,
-                  height: _controller.value.size.height,
-                  child: VideoPlayer(_controller),
-                ),
-              ),
-            ),
+            // SizedBox.expand(
+            //   child: FittedBox(
+            //     fit: BoxFit.fill,
+            //     child: SizedBox(
+            //       width: _controller.value.size.width,
+            //       height: _controller.value.size.height,
+            //       child: VideoPlayer(_controller),
+            //     ),
+            //   ),
+            // ),
             LoginWidget()
           ],
         ),
