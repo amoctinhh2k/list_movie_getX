@@ -31,6 +31,7 @@ class _DetailViewState extends State<MovieDetailScreen> {
   GlobalKey<CartIconKey> gkCart = GlobalKey<CartIconKey>();
   late Function(GlobalKey) runAddToCardAnimation;
   late int _counter = 0;
+  @override
   void initState() {
     super.initState();
   }

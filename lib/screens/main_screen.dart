@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_list_movie/app.dart';
 import 'package:flutter_list_movie/helpers.dart';
 import 'package:flutter_list_movie/style/bottom_navbar_bloc.dart';
 import 'package:flutter_list_movie/style/theme_bloc/theme_controller.dart';
-import 'package:flutter_list_movie/widgets/genres_screen_widgets/genres_widgets/genres_list.dart';
-import 'package:flutter_list_movie/widgets/genres_screen_widgets/genres_widgets/genres_widget.dart';
 import 'package:flutter_list_movie/widgets/search_screen_widgets/search_list/search_widget.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'home_screen/home_screen.dart';
-import 'login_screen/login.dart';
+
+import 'account_screen/account_screen.dart';
+import 'genres_screen/genres_list_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({
@@ -25,25 +23,39 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   final BottomNavBar _bottomNavBar = BottomNavBar();
   late bool isDarkMode;
-  var isOnline = false;
+  var isOnline = true;
 
   // late VideoPlayerController _controller;
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 5), () {
-      // checkBoxCallBack(isOnline);
-      print("kkkk $isOnline");
-      setState(() {
-        isOnline = true;
-      });
-    });
+    checkBoxCallBack(isOnline);
+    // Future.delayed(const Duration(seconds: 5), () {
+    //   ScaffoldMessenger.of(context).showSnackBar(
+    //       const SnackBar(content: Text("Không có kết nối Internet!")));
+    // print("kkkk $isOnline");
+    // setState(() {
+    //   isOnline = true;
+    // });
+    // });
   }
 
-  @override
-  void dispose() {
-    _bottomNavBar.close();
-    super.dispose();
+  // @override
+  // void dispose() {
+  //   _bottomNavBar.close();
+  //   super.dispose();
+  // }
+
+  Future<void> checkBoxCallBack(bool checkBoxState) async {
+    var isChecked = await verifyOnline();
+    print("kkkk $isChecked");
+    setState(() {
+      isOnline = isChecked;
+    });
+    if (!isOnline) {
+      ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Không có kết nối Internet!")));
+    }
   }
 
   @override
@@ -59,30 +71,36 @@ class _MainScreenState extends State<MainScreen> {
           ),
           child: SafeArea(
             child: Scaffold(
-                body: StreamBuilder<NavBarItem>(
-                  stream: _bottomNavBar.itemStream,
-                  initialData: _bottomNavBar.defaultItem,
-                  builder: (BuildContext context,
-                      AsyncSnapshot<NavBarItem> snapshot) {
-                    switch (snapshot.data) {
-                      case NavBarItem.home:
-                        // return SearchWidget();
-                        return HomeScreen(
-                            themeController: widget.themeController);
-                      case NavBarItem.genres:
-                        return GenresListScreen();
-                      // GenresWidget();
-                      case NavBarItem.search:
-                        return SearchWidget();
-                      // Container();
-                      case NavBarItem.profile:
-                        return BackgroundVideo();
-                      // Container();
-                      default:
-                        return const SizedBox();
-                    }
-                  },
-                ),
+                body: !isOnline
+                    ? const Center(
+                        child: CircularProgressIndicator(),
+                      )
+                    : StreamBuilder<NavBarItem>(
+                        stream: _bottomNavBar.itemStream,
+                        initialData: _bottomNavBar.defaultItem,
+                        builder: (BuildContext context,
+                            AsyncSnapshot<NavBarItem> snapshot) {
+                          switch (snapshot.data) {
+                            case NavBarItem.home:
+                              // return SearchWidget();
+                              return AccountScreen();
+                            // return HomeScreen(
+                            //     themeController: widget.themeController);
+                            case NavBarItem.genres:
+                              return GenresListScreen();
+                            // GenresWidget();
+                            case NavBarItem.search:
+                              return SearchWidget();
+                            // Container();
+                            case NavBarItem.profile:
+                              return AccountScreen();
+                            // BackgroundVideo();
+                            // Container();
+                            default:
+                              return const SizedBox();
+                          }
+                        },
+                      ),
                 bottomNavigationBar: StreamBuilder(
                   stream: _bottomNavBar.itemStream,
                   initialData: _bottomNavBar.defaultItem,

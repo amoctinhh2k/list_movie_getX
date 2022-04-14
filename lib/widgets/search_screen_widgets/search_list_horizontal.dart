@@ -48,7 +48,7 @@ class _SearchListHorizontalState extends State<SearchListHorizontal> {
         }
       }
     }
-    print('Person......$query...${_map}');
+    print('Movie......$query...${_map}');
     return List.generate(_map.length, (i) {
       return {
         'id': _map[i]['id'].toString(),
@@ -108,7 +108,7 @@ class _SearchListHorizontalState extends State<SearchListHorizontal> {
             SizedBox.expand(
               child: FittedBox(
                 fit: BoxFit.fill,
-                child: Image(image: new AssetImage('/assets/img/play.json')),
+                child: Lottie.asset('/assets/img/play.json'),
               ),
             ),
             Column(
@@ -307,8 +307,9 @@ class _SearchListHorizontalState extends State<SearchListHorizontal> {
                                       Expanded(
                                         flex: 2,
                                         child: Container(
-                                          child: Lottie.network(
-                                              'https://assets7.lottiefiles.com/packages/lf20_IJESD1.json',
+                                          child: Lottie.asset(
+                                              // 'https://assets2.lottiefiles.com/packages/lf20_96cnyxkh.json',
+                                              "assets/img/searchback.json",
                                               width: 50,
                                               height: 50),
                                         ),

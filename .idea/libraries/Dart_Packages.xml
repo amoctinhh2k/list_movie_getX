@@ -51,6 +51,13 @@
             </list>
           </value>
         </entry>
+        <entry key="buttons_tabbar">
+          <value>
+            <list>
+              <option value="D:/Android/Flutter/.pub-cache/hosted/pub.dartlang.org/buttons_tabbar-1.3.4/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="cached_network_image">
           <value>
             <list>
@@ -839,6 +846,7 @@
       <root url="file://D:/Android/Flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/lib" />
       <root url="file://D:/Android/Flutter/.pub-cache/hosted/pub.dartlang.org/badges-2.0.2/lib" />
       <root url="file://D:/Android/Flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib" />
+      <root url="file://D:/Android/Flutter/.pub-cache/hosted/pub.dartlang.org/buttons_tabbar-1.3.4/lib" />
       <root url="file://D:/Android/Flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-3.1.0+1/lib" />
       <root url="file://D:/Android/Flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image_platform_interface-1.0.0/lib" />
       <root url="file://D:/Android/Flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image_web-1.0.1/lib" />
