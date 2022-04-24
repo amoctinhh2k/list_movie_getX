@@ -123,7 +123,8 @@ class _DetailViewState extends State<MovieDetailScreen> {
                       Expanded(
                         flex: 1,
                         child: InkWell(
-                          child: Container(
+                          child:
+                          Container(
                             decoration: const BoxDecoration(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(30.0)),

@@ -5,37 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d532fa86-47c0-43d5-834b-c530b2dc2600" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/register.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/searchback.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/account_screen/account_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/button_tab.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/group.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/group_list_date.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/generated_main.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/9d2a03f1b810e7f47fe498b859bf06bd/gen_dart_plugin_registrant.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/9d2a03f1b810e7f47fe498b859bf06bd/gen_dart_plugin_registrant.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/home_screen/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home_screen/home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/main_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/main_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/NOTICES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/packages/fluttertoast/assets/toastify.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/packages/fluttertoast/assets/toastify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/packages/fluttertoast/assets/toastify.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/packages/fluttertoast/assets/toastify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/account_screen/account_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/account_screen/account_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/movie_detail_screen/movie_detail_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/movie_detail_screen/movie_detail_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/genres_screen_widgets/genres_widgets/genres_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/genres_screen/genres_list_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/genres_screen_widgets/genres_widgets/genres_widget.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/home_screen_widgets/movies_list_horizontal.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/home_screen_widgets/movies_list_horizontal.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/home_screen_widgets/movies_list_search.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/search_screen_widgets/search_list_horizontal.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/search_screen_widgets/search_list_horizontal.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/group.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/group.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/group_list_date.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/group_list_date.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\amoct\.android\avd\Pixel_2_API_30.avd]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -56,11 +50,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="android.sdk.path" value="D:/Android/Sdk" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../Android/Sdk" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -113,13 +107,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/screens/account_screen/account_screen.dart</url>
-          <line>225</line>
+          <line>306</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/screens/account_screen/account_screen.dart</url>
-          <line>22</line>
+          <line>25</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/screens/account_screen/account_screen.dart</url>
+          <line>186</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
